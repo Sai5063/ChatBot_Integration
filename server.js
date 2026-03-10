@@ -301,9 +301,6 @@ app.use((req,res,next)=>{
     res.removeHeader("X-Frame-Options");
     next();
 });
-app.get("/", (req, res) => {
-    res.send("Chatbot server is running 🚀");
-});
 app.listen(3000, "0.0.0.0", () => {
   console.log("Server running on port 3000");
 })
